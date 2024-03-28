@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pdf Resizer</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="form-modal">
+      <div class="form-heading">
+        <img
+          src="Wema-Bank-Logo.png"
+          alt="Wema-Bank-Logo"
+          height="50px"
+          id="wemaLogo"
+        />
+        <h1 class="form-title pt-sans-bold">Pdf Resizer</h1>
+      </div>
+      <form id="pdfResizeForm" method="post">
+        <div class="form-inputs">
+          <label for="imageFile">Image:</label>
+          <input
+            type="file"
+            id="imageFile"
+            name="imageFile"
+            accept="image/jpeg, image/png"
+            required multiple
+          />
+        </div>
+        <div class="form-inputs">
+          <label for="pdfFile">Pdf File:</label>
+          <input
+            type="file"
+            id="pdfFile"
+            name="pdfFile"
+            accept="application/pdf"
+            required multiple
+          />
+        </div>
+        <div class="form-inputs">
+          <label for="excelFile">Excel File:</label>
+          <input
+            type="file"
+            id="excelFile"
+            name="excelFile"
+            accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+            required multiple
+          />
+        </div>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

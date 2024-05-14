@@ -13,19 +13,19 @@ pdfResizeForm.addEventListener("submit", async (e) => {
   if (imageFile.length > 0) {
     for (let i = 0; i < imageFile.length; i++) {
       const file = imageFile[i];
-      formData.append("pdf", file, file.name);
+      formData.append(file.type, file, file.name);
     }
   }
   if (pdfFile.length > 0) {
     for (let i = 0; i < pdfFile.length; i++) {
       const file = pdfFile[i];
-      formData.append("pdf", file, file.name);
+      formData.append(file.type, file, file.name);
     }
   }
   if (excelFile.length > 0) {
     for (let i = 0; i < excelFile.length; i++) {
       const file = excelFile[i];
-      formData.append("pdf", file, file.name);
+      formData.append(file.type, file, file.name);
     }
   }
 
